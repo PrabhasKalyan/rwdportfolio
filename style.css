@@ -1,0 +1,295 @@
+.navb{
+    height:8vh;
+    background-color:grey;
+    display:flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius: 150px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.navb a{
+color: white;
+text-decoration: none;
+padding-left: 10%;
+padding-right:10%;
+border-radius: 25px;
+border: 1px solid gray;
+font-size: 4vmin;
+}
+.rotatei{
+    height: 50vh;
+    width: 30vw;
+}
+.Home{
+    font-size:4vmin;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+body{
+    background-image: url(task7bg2.jpg);
+}
+.logo{
+    height: 10vh;
+    width: 10vh;
+}
+h1{
+    text-align: center;
+    font-size: 5vmin;
+}
+li{
+    font-size: 3vmin;
+}
+img{
+    margin-right: 160px;
+}
+ul{ 
+    margin-top: 30px;
+    margin-left: 450px;
+    margin-bottom: 100px;
+    }
+
+.project{
+        display:flex;
+        justify-content: space-evenly;
+        margin-left:10%;
+    }
+.project img{
+    height:30vh;
+    width:30vh;
+}
+#dow{
+    margin-left:600px
+}
+.btn{
+    transition: transform 0.3s;
+}
+.btn:hover{
+    transform: translateY(-10px)
+}
+@keyframes slide{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform:translate(0);
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform:rotateY(0);
+        color: violet;
+    }
+    25%{
+        color:indigo;
+    }
+    50%{
+        color:yellow;
+    }
+    75%{
+        color:orange;
+    }
+    100%{
+        transform:rotateY(360deg);
+        color: red;
+    }
+}
+.rotatei{
+    animation-name: rotate;
+    animation-duration: 1.5s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+    
+}
+.rotate{
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-timing-function:infinite;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;}
+@keyframes rotates{
+    from{
+        transform:rotateY(0);
+    }
+    to{
+        transform:rotateY(360deg);
+    }
+}
+img{
+    animation-name:rotates;
+    animation-duration: 1s;
+    animation-timing-function:ease-in;
+    animation-delay:2s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+}
+.lin{
+    animation-name:slide;
+    animation-duration: 1s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+}
+.rotate{
+text-shadow: 2px 2px grey;
+}
+img{
+    box-shadow: 7px 7px grey;
+
+}
+.project{
+    animation-name:slide;
+    animation-duration: 2s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+}
+.me{
+    animation-name:slide;
+    animation-duration: 1s;
+    animation-timing-function:ease-in;
+    animation-delay:0s;
+    animation-iteration-count:1;
+    animation-direction:normal;
+}
+footer{
+    padding: 20px;
+}
+h2{
+    text-align: center;
+}
+span{
+    height: 2px;
+    width: 2px;
+}
+.firstname{
+    height:50px;
+    width:25%;
+    border-radius: 25px;
+    margin:5px;
+}
+.lastname{
+    height:50px;
+    width:25%;
+    border-radius: 25px;
+    margin:5px;
+}
+.email{
+    height:50px;
+    width:25%;
+    border-radius: 25px;
+    margin:5px;
+}
+.textarea{
+    border-radius: 25px;
+}
+
+@media only screen and (max-device-width:600px){
+    .navb{
+        height:18vh;
+        width: 130vh;
+        background-color:grey;
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        border-radius: 100px;
+        margin-left: 25vw;
+        margin-right:20vw;
+    }
+    .navb a{
+        font-size: 40px;
+    }
+    h1{
+        text-align: center;
+        font-size:30px ;  
+    }
+    p{
+        text-align: center;
+        font-size: 30px;
+    }
+    li{
+        text-align: center;
+        font-size: 30px;
+    }
+    .Home{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Home img{
+        height:max-content;
+        width: max-content;
+    }
+    .project{
+        display:grid;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto auto auto; 
+        grid-gap: auto;
+    }
+    #p1{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    #p2{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+    #p3{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    #p4{
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    .firstname{
+        height:8vh;
+        width:60vh;      
+    }
+    .lastname{
+        height:8vh;
+        width:60vh;      
+    }
+    .email{
+        height:8vh;
+        width:60vh;      
+    }
+    .textarea{
+        height:20vh;
+        width:60vh;      
+    }
+    .submit{
+        height:8vh;
+        width:30vh;
+        border-radius:25px;
+    }
+    .btn{
+        height:8vh;
+        width:30vh;
+        border-radius:25px;
+    }
+    input::placeholder{
+        font-size: 40px;
+    }
+    textarea::placeholder{
+        font-size: 40px;
+    }
+
+}
